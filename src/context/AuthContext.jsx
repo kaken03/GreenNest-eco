@@ -46,19 +46,26 @@ export function AuthProvider({ children }) {
       const newUser = userCredential.user
 
       // Store user data in Firestore
-      await setDoc(doc(db, 'users', newUser.uid), {
-        uid: newUser.uid,
-        email: email,
-        displayName: displayName,
-        role: role,
-        createdAt: new Date(),
-        orders: [],
-      })
+      try {
+        await setDoc(doc(db, 'users', newUser.uid), {
+          uid: newUser.uid,
+          email: email,
+          displayName: displayName,
+          role: role,
+          createdAt: new Date(),
+          orders: [],
+        })
+        console.log('User document created successfully:', newUser.uid)
+      } catch (firestoreError) {
+        console.error('Firestore error:', firestoreError)
+        throw new Error(`Failed to save user data: ${firestoreError.message}`)
+      }
 
       setUser(newUser)
       setUserRole(role)
       return newUser
     } catch (error) {
+      console.error('Registration error:', error)
       const err = new Error(error.message)
       err.code = error.code
       throw err

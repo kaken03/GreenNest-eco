@@ -40,11 +40,14 @@
    Empty State
    ======================================== */
 
-.empty-state {
+.empty-statee {
   text-align: center;
   padding: 60px 20px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
+  font-weight: 500;
+  color: #adadad;
+  font-size: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
@@ -371,21 +374,21 @@
 }
 
 /* Details Modal Specific Styles */
-.details-section {
+.details-sectionnn {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 12px;
 }
 
-.detail-item {
+.detail-itemm {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
 }
 
-.detail-item .detail-label {
+.detail-itemm .detail-label {
   font-size: 12px;
   color: black;
   font-weight: 500;
@@ -502,7 +505,7 @@
   font-size: 15px;
 }
 
-.btn-close-modal {
+.btn-close-modal1 {
   width: 100%;
   padding: 10px 16px;
   margin-top: 0;
@@ -642,7 +645,7 @@
   }
 
   .btn-cancel-orderr {
-    padding: 10px 20px;
+    padding: 6px 10px;
     font-size: 14px;
   }
 
@@ -904,7 +907,7 @@
     font-size: 11px;
   }
 
-  .btn-close-modal {
+  .btn-close-modal1 {
     padding: 9px 12px;
   }
 }

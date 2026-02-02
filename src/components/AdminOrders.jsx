@@ -202,9 +202,9 @@ export default function AdminOrders({
                     </div>
                     <span className={`order-status status-${order.status}`}>{order.status}</span>
                   </div>
-                  <div className="order-actions">
+                  <div className="order-actions3">
                     <button
-                      className="action-btn view-details-btn"
+                      className="action-btn view-details-btn3"
                       onClick={() => handleViewDetails(order)}
                     >
                       View Details
@@ -263,17 +263,17 @@ export default function AdminOrders({
         <div className="modal-overlay" onClick={handleCloseDetailsModal}>
           <div className="modal-content details-modal" onClick={(e) => e.stopPropagation()}>
             <div className="modal-body">
-              <div className="details-section">
-                <div className="detail-item">
-                  <span className="detail-label">Order ID:</span>
-                  <span className="detail-value">#{selectedOrder.id.slice(0, 8).toUpperCase()}</span>
+              <div className="details-sectionnn">
+                <div className="detail-item1">
+                  <span className="detail-label1">Order ID:</span>
+                  <span className="detail-value1">#{selectedOrder.id.slice(0, 8).toUpperCase()}</span>
                 </div>
-                <div className="detail-item">
-                  <span className="detail-label">Date:</span>
-                  <span className="detail-value">{formatDate(selectedOrder.createdAt)}</span>
+                <div className="detail-item1">
+                  <span className="detail-label1">Date:</span>
+                  <span className="detail-value1">{formatDate(selectedOrder.createdAt)}</span>
                 </div>
-                <div className="detail-item">
-                  <span className="detail-label">Status:</span>
+                <div className="detail-item1">
+                  <span className="detail-label1">Status:</span>
                   <span className={`detail-badge status-${selectedOrder.status}`}>{selectedOrder.status}</span>
                 </div>
               </div>

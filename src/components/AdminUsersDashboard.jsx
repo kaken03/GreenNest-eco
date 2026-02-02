@@ -102,10 +102,10 @@ export default function AdminUsersDashboard({
                   </span>
                 </div>
 
-                <div className="user-card-body">
+                {/* <div className="user-card-body">
                   <div className="user-details-grid">
                     <div className="detail-item">
-                      <span className="detail-label">Joined</span>
+                      <span className="detail-label">Joined </span>
                       <span className="detail-value">{formatDate(user.createdAt)}</span>
                     </div>
                     <div className="detail-item">
@@ -117,7 +117,7 @@ export default function AdminUsersDashboard({
                       <span className="detail-value">{user.phone || 'N/A'}</span>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="user-card-actions">
                   <button
@@ -157,14 +157,14 @@ export default function AdminUsersDashboard({
                   <span className="detail-label">Email:</span>
                   <span className="detail-value">{selectedUser.email}</span>
                 </div>
-                <div className="detail-item-row">
+                {/* <div className="detail-item-row">
                   <span className="detail-label">Phone:</span>
                   <span className="detail-value">{selectedUser.phone || 'Not provided'}</span>
                 </div>
                 <div className="detail-item-row">
                   <span className="detail-label">Address:</span>
                   <span className="detail-value">{selectedUser.address || 'Not provided'}</span>
-                </div>
+                </div> */}
               </div>
 
               <div className="divider"></div>
@@ -174,10 +174,10 @@ export default function AdminUsersDashboard({
                   <span className="detail-label">Joined:</span>
                   <span className="detail-value">{formatDate(selectedUser.createdAt)}</span>
                 </div>
-                <div className="detail-item-row">
+                {/* <div className="detail-item-row">
                   <span className="detail-label">Last Active:</span>
                   <span className="detail-value">{formatDate(selectedUser.lastActive)}</span>
-                </div>
+                </div> */}
                 <div className="detail-item-row">
                   <span className="detail-label">Account Status:</span>
                   <span className={`detail-badge role-${selectedUser.role}`}>
@@ -210,7 +210,7 @@ export default function AdminUsersDashboard({
                 </div>
               </div>
 
-              <button className="btn btn-primary btn-close-modal" onClick={handleCloseDetails}>
+              <button className="btn btn-primary btn-close-modal1" onClick={handleCloseDetails}>
                 Close
               </button>
             </div>

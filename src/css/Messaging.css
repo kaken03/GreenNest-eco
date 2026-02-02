@@ -255,7 +255,16 @@
 .btn-send:hover:not(:disabled) {
   box-shadow: 0 2px 6px rgba(77, 184, 168, 0.15);
 }
-
+.empty-state33 p {
+  font-size: 14px;
+  color: var(--text-light);
+}
+.empty-state33 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 .btn-send:disabled {
   opacity: 0.6;
   cursor: not-allowed;

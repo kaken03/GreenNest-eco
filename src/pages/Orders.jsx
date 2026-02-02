@@ -143,12 +143,8 @@ export function Orders() {
 
         {/* Empty State */}
         {!loading && orders.length === 0 && (
-          <div className="empty-state">
-            <h2>No Orders Yet</h2>
-            <p>Start shopping and place your first order!</p>
-            <button onClick={() => navigate('/shop')} className="btn btn-primary">
-              Continue Shopping
-            </button>
+          <div className="empty-statee">
+            <p>No Orders Yet</p>
           </div>
         )}
 
@@ -228,15 +224,15 @@ export function Orders() {
 
             <div className="modal-body">
               <div className="details-section">
-                <div className="detail-item">
+                <div className="detail-itemm">
                   <span className="detail-label">Order ID:</span>
                   <span className="detail-value">#{selectedOrder.id.slice(0, 8).toUpperCase()}</span>
                 </div>
-                <div className="detail-item">
+                <div className="detail-itemm">
                   <span className="detail-label">Date:</span>
                   <span className="detail-value">{formatDate(selectedOrder.createdAt)}</span>
                 </div>
-                <div className="detail-item">
+                <div className="detail-itemm">
                   <span className="detail-label">Status:</span>
                   <span className={`detail-badge status-${selectedOrder.status}`}>{selectedOrder.status}</span>
                 </div>

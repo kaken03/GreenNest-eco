@@ -578,7 +578,7 @@
 }
 
 /* Order Actions */
-.order-actions {
+.order-actions3 {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
@@ -607,19 +607,19 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.view-details-btn {
-  background-color: rgb(228, 255, 224);
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+.view-details-btn3 {
+  background-color: rgb(223, 223, 223);
+  color: black;
+  border: 1px solid black;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.view-details-btn:hover {
-  background-color: var(--primary-color);
-  color: white;
-  box-shadow: 0 2px 6px rgba(77, 184, 168, 0.15);
+.view-details-btn3:hover {
+  background-color: rgb(175, 175, 175);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 2px 6px rgba(184, 77, 77, 0.15);
 }
 
 .confirm-btn {
@@ -842,7 +842,7 @@
     font-size: 0.9rem;
   }
 
-  .order-actions {
+  .order-actions3 {
     gap: 0.6rem;
     flex-wrap: wrap;
     justify-content: center;
@@ -855,7 +855,7 @@
     min-width: 110px;
   }
 
-  .view-details-btn {
+  .view-details-btn3 {
     flex: 0 1 140px;
   }
 }
@@ -913,7 +913,7 @@
     font-size: 0.8rem;
   }
 
-  .order-actions {
+  .order-actions3 {
     gap: 0.4rem;
     flex-direction: column;
     justify-content: center;
@@ -1084,13 +1084,14 @@
   gap: 1rem;
 }
 
-.detail-item {
+.detail-item1 {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  text-align: center;
 }
 
-.detail-label {
+.detail-label1 {
   font-size: 0.8rem;
   color: #6c757d;
   text-transform: uppercase;
@@ -1098,7 +1099,7 @@
   letter-spacing: 0.5px;
 }
 
-.detail-value {
+.detail-value1 {
   font-size: 0.95rem;
   color: #333;
   font-weight: 500;
@@ -1159,13 +1160,13 @@
   padding: 0.75rem 0;
 }
 
-.detail-item-row .detail-label {
+.detail-item-row .detail-label1 {
   font-weight: 600;
   color: #6c757d;
   text-transform: none;
 }
 
-.detail-item-row .detail-value {
+.detail-item-row .detail-value1 {
   color: #333;
   font-weight: 500;
 }
@@ -1190,6 +1191,7 @@
 /* Role Management Section */
 .role-management-section {
   margin-top: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .role-management-section .section-title {
