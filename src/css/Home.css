@@ -6,7 +6,7 @@
 
 /* Hero */
 .landing-hero {
-  min-height: 90vh;
+  min-height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
     url('https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=1600');
   background-size: cover;
@@ -119,16 +119,17 @@
 .cta-btn {
   margin-top: 1.5rem;
   padding: 12px 30px;
-  background: #6abf69;
+  background: #ffffff;
   border: none;
   border-radius: 25px;
-  color: #fff;
+  color: #2f5d3a;
   font-size: 1rem;
   cursor: pointer;
 }
 
 .cta-btn:hover {
-  background: #58a857;
+  background: #a8d2a7;
+  transform: scale(103%);
 }
 
 /* Mobile */

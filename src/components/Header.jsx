@@ -20,7 +20,7 @@ export function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <Link to={userRole === 'admin' ? '/shop' : '/home'} className="header-logo">
+        <Link to={userRole === 'admin' ? '/dashboard' : '/home'} className="header-logo">
           <img 
                 src={greennestLogo}
                 alt="GreenNest Logo" 

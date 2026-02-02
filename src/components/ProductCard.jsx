@@ -43,7 +43,7 @@ export function ProductCard({ product, onProductUpdated, onEditProduct }) {
         {userRole === 'admin' && (
           <div className="admin-actions">
             <button
-              className="btn btn-info"
+              className="btn btn-primary"
               onClick={(e) => {
                 e.stopPropagation()
                 onEditProduct && onEditProduct(product)

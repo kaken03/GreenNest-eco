@@ -101,13 +101,13 @@ export function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="final-cta">
+      {/* <section className="final-cta">
         <h2>Choose Sustainable Living</h2>
         <p>Support local artisans while protecting the planet.</p>
         <button className="cta-btn" onClick={handleGetStarted}>
           {user ? 'Explore Collection' : 'Get Started Today'}
         </button>
-      </section>
+      </section> */}
 
       {/* Login Modal */}
       <LoginModal 

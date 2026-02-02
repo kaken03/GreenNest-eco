@@ -219,8 +219,16 @@
   display: flex;
   margin-top: -18px;
   gap: 48px;
+  align-items: center;
 }
-
+.order-actionss1 {
+  padding: 10px 46px 10px;
+  display: flex;
+  margin-top: -18px;
+  gap: 48px;
+  align-items: center;
+  text-align: center;
+}
 .btn-view-details {
   padding: 12px 12px;
   background-color: rgb(228, 255, 224);

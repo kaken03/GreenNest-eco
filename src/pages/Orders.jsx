@@ -159,7 +159,7 @@ export function Orders() {
               <div key={order.id} className="order-card1">
                 <div className="order-card-header">
                     <span className="order-id1">Order #{order.id.slice(0, 8).toUpperCase()}</span>
-                    <span className="order-date1">{formatDate(order.createdAt)}</span>
+                    <span className={`order-status status-${order.status}`}>{order.status}</span>
                 </div>
 
                 {/* <div className="order-card-details">

@@ -132,9 +132,9 @@ body.modal-open {
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  background: #3a9b8f;
+  background: var(--primary-color);
   color: white;
-  box-shadow: #3a9b8f;
+  box-shadow: 0 4px 12px var(--primary-color-shadow);
   text-transform: uppercase;
 }
 
@@ -170,14 +170,14 @@ body.modal-open {
   text-align: center;
   margin-top: 30px;
   font-size: 14px;
-  color: var(--text-muted);
+  color: var(--primary-color);
   letter-spacing: 0.3px;
   margin-bottom: 0;
   line-height: 1.6;
 }
 
 .modal-footer a {
-  color: var(--accent-teal);
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 700;
   transition: all 0.2s ease;
@@ -185,10 +185,6 @@ body.modal-open {
   cursor: pointer;
 }
 
-.modal-footer a:hover {
-  color: var(--accent-teal-dark);
-  border-bottom-color: var(--accent-teal);
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {

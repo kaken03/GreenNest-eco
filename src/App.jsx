@@ -6,10 +6,10 @@ import { Header } from './components/Header'
 import { ProtectedRoute } from './components/ProtectedRoute'
 import { useAuth } from './context/AuthContext'
 import { Home } from './pages/Home'
-import { ProductPage } from './pages/ProductPage'
+import { ProductPage } from './pages/ShopPage'
 import { CartPage } from './pages/CartPage'
 import { CheckoutPage } from './pages/CheckoutPage'
-import { AdminOrdersDashboard } from './pages/AdminOrdersDashboard'
+import { AdminOrdersDashboard } from './pages/Dashboard'
 import { Orders } from './pages/Orders'
 import { Messaging } from './pages/Messaging'
 import { Profile } from './pages/Profile'
@@ -72,9 +72,9 @@ function AppContent() {
             }
           />
           
-          {/* Admin Orders Dashboard */}
+          {/*Dashboard */}
           <Route
-            path="/admin-dashboard"
+            path="/dashboard"
             element={
               <ProtectedRoute requiredRole="admin">
                 <AdminOrdersDashboard />

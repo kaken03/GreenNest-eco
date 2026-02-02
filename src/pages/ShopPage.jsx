@@ -5,7 +5,7 @@ import { collection, getDocs, query, where, orderBy, limit } from 'firebase/fire
 import { useAuth } from '../context/AuthContext'
 import { ProductCard } from '../components/ProductCard'
 import { ProductModal } from '../components/ProductModal'
-import '../css/ProductPage.css'
+import '../css/ShopPage.css'
 
 const CATEGORIES = [
   { id: 'all', name: 'All' },
@@ -113,7 +113,7 @@ export function ProductPage() {
 
         {!loading && filteredProducts.length === 0 && (
           <div className="empty-state">
-            <p>No products found.</p>
+            <p>No products available.</p>
           </div>
         )}
 
